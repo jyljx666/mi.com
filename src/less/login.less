@@ -1,0 +1,91 @@
+@charset 'utf-8';
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+#login-main{
+    width: 854px;
+    height: 529px;
+    background:#fff ;
+    margin: 0 auto;
+    margin-top: 138px;
+    position: relative;
+    .login-title{
+        width: 854px;
+        height: 102px;
+        padding-top:25px ;
+        background-color: aqua;
+        text-align: center;
+        .title-mi{
+            vertical-align: bottom;
+        }
+        .title-font{
+            width: 100%;
+            height: 29px;
+            padding-top: 15px;
+            font-family: Helvetica,arial,"MI Lan Pro","Hiragino Sans GB","PingFang SC","Microsoft YaHei","微軟正黑體","儷黑 Pro",sans-serif;
+            font-size: 22px;
+        }
+    }
+    .title-sc{
+        text-decoration: none;
+        display: block;
+        overflow: hidden;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-image: url(../images/icon_ercode.png);
+        
+    }
+    .title-sc:hover{
+        background-position: -80px 0px;
+    }
+    .login-zj{
+        width: 100%;
+        height: 402px;
+        background-color: blue;
+        .login-nr{
+            width: 358px;
+            height: 382px;
+            background-color: #fff;
+            margin: 0 auto;
+            .login-form{
+                width: 358px;
+                height: 114px;
+                background-color: bisque;
+                #username{
+                    width: 326px;
+                    height: 22px;
+                    padding: 13px 16px 13px 14px;
+                    outline: none;
+                    border:1px solid #e0e0e0;
+                    margin-bottom: 14px;
+                }
+                #password{
+                    width: 326px;
+                    height: 22px;
+                    padding: 13px 16px 13px 14px;
+                    outline: none;
+                    border:1px solid #e0e0e0
+                }
+            }
+            #login{
+                width: 358px;
+                height: 50px;
+                border: 0px solid #fff;
+                outline: none;
+                cursor: pointer;
+                color: #fff;
+                background-color: #ff6700;
+            }
+        }
+    }
+}
