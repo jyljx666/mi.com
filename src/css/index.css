@@ -1,0 +1,683 @@
+@charset 'utf-8';
+* {
+  padding: 0;
+  margin: 0;
+}
+#index-title {
+  width: 100%;
+  height: 48px;
+  background-color: #333;
+}
+#index-title > .index-nav {
+  width: 1080px;
+  height: 48px;
+  margin: 0 auto;
+}
+#index-title > .index-nav > .index-dh {
+  float: right;
+  list-style: none;
+}
+#index-title > .index-nav > .index-dh > span {
+  width: 0px;
+  float: left;
+  border-right: 1px solid #666;
+  height: 16px;
+  margin-top: 17px;
+  margin-left: 6px;
+  margin-right: 3px;
+}
+#index-title > .index-nav > .index-dh > li {
+  float: left;
+}
+#index-title > .index-nav > .index-dh > li > a {
+  text-decoration: none;
+  color: #e7e7e7;
+  font-size: 14px;
+  line-height: 48px;
+}
+#index-title > .index-nav > .index-dh > .m-no-login {
+  margin-right: 8px;
+}
+#index-title > .index-nav > .index-dh > .m-no-login a {
+  margin-left: 8px;
+}
+#index-title > .index-nav > .index-dh > .fl {
+  text-align: center;
+  height: 48px;
+  line-height: 48px;
+  margin-right: 8px;
+  margin-left: 11px;
+  vertical-align: middle;
+}
+#index-title > .index-nav > .index-dh > .fl .icon-shouji {
+  font-size: 20px;
+  color: #e7e7e7;
+  line-height: 48px;
+  vertical-align: middle;
+}
+#index-title > .index-nav > .index-dh > .site-item-nav {
+  margin-right: 8px;
+  margin-left: 11px;
+  position: relative;
+}
+#index-title > .index-nav > .index-dh > .site-item-nav > .icon-ai-arrow-down {
+  color: #e7e7e7;
+}
+#index-title > .index-nav > .index-dh > .site-item-nav > #site-cx {
+  width: 160px;
+  height: 0px;
+  overflow: hidden;
+  list-style: none;
+  position: absolute;
+  left: 0;
+  top: 48px;
+  transition: 0.1s;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+#index-title > .index-nav > .index-dh > .site-item-nav > #site-cx > li {
+  width: 140px;
+  height: 35px;
+  padding: 0px 10px;
+  text-align: center;
+  line-height: 35px;
+  background: #fff;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+#index-title > .index-nav > .index-dh > .site-item-nav > #site-cx > li > a {
+  font-size: 14px;
+  color: #666;
+  text-decoration: none;
+}
+#index-title > .index-nav > .index-dh > .site-item-nav > #site-cx > li:hover {
+  background: #845f3f;
+}
+#index-title > .index-nav > .index-dh > .site-item-nav > #site-cx > li:hover a {
+  color: #fff;
+}
+#index-title > .index-nav > .index-dh > .site-item-nav:hover #site-cx {
+  height: 70px;
+}
+#index-ss {
+  width: 100%;
+  height: 51px;
+  margin-top: 20px;
+}
+#index-ss > .index-ss-content {
+  width: 1080px;
+  height: 51px;
+  margin: 0 auto;
+}
+#index-ss > .index-ss-content > img {
+  width: 123px;
+  height: 51px;
+  margin-right: 140px;
+  float: left;
+}
+#index-ss > .index-ss-content .index-xs,
+#index-ss > .index-ss-content .index-qg {
+  width: 72px;
+  height: 51px;
+  margin-right: 32px;
+  line-height: 57px;
+  font-size: 18px;
+  float: left;
+}
+#index-ss > .index-ss-content > .icon-gouwuche {
+  float: right;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin-top: 28px;
+}
+#index-ss > .index-ss-content > #index-shopping {
+  width: 281px;
+  height: 42px;
+  float: right;
+  margin-top: 1.5px;
+  border-bottom: 1px solid #333;
+}
+#index-ss > .index-ss-content > #index-shopping > .icon-fangdajing {
+  float: left;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin-top: 17px;
+}
+#index-ss > .index-ss-content > #index-shopping > .index-sousuo {
+  width: 249px;
+  height: 18px;
+  outline: none;
+  border: 0px #fff solid;
+  float: left;
+  margin-top: 20px;
+}
+#nav-box {
+  width: 1080px;
+  height: 358px;
+  margin: 0 auto;
+  margin-top: 7px;
+}
+#nav-box > #nav-list {
+  width: 221px;
+  height: 358px;
+  float: left;
+  list-style: none;
+  background-color: #9f8052;
+}
+#nav-box > #nav-list > li {
+  width: 161px;
+  height: 33.19px;
+  padding: 0px 30px;
+  text-align: center;
+}
+#nav-box > #nav-list > li > span {
+  color: #fff;
+  font-size: 14px;
+  line-height: 33.19px;
+}
+#nav-box > #nav-list > li > span:hover {
+  color: #dfaf7e;
+}
+#nav-box > #nav-list > li:nth-child(1) {
+  margin-top: 13px;
+}
+#nav-box > #nav-list > li:hover {
+  background-color: #876d46;
+}
+#nav-box > .banner-box {
+  width: 859px;
+  height: 358px;
+}
+#nav-box > .banner-box > .swiper-wrapper > .swiper-slide img {
+  width: 859px;
+  height: 358px;
+}
+#hreo-nav {
+  width: 1080px;
+  height: 148px;
+  padding-bottom: 10px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #e7e7e7;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+#hreo-nav > div {
+  width: 130px;
+  height: 143px;
+  float: left;
+  text-align: center;
+  margin-right: 107px;
+}
+#hreo-nav > div > img {
+  width: 80px;
+  height: 80px;
+  padding: 25px 25px 15px 25px;
+}
+#hreo-nav > div > span {
+  color: #666666;
+  font-size: 14px;
+}
+#hreo-nav > div:nth-child(5) {
+  margin-right: 0px;
+}
+#dh-zc {
+  width: 1080px;
+  height: 37px;
+  margin: 0 auto;
+  color: #333;
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 35px;
+}
+#dh-zc > .dh-zc-yy {
+  margin-left: 12px;
+  font-size: 14px;
+  color: #999;
+}
+#dh-zc > .dh-gd {
+  width: 30px;
+  height: 30px;
+  color: #999;
+  cursor: pointer;
+  font-size: 14px;
+  float: right;
+  line-height: 30px;
+}
+#dh-zc > .dh-jt {
+  width: 20px;
+  height: 20px;
+  background: url(../images/jlt.png) no-repeat 8px -31px;
+  float: right;
+  margin-top: 2px;
+}
+#dh-zc > .dh-jt:hover {
+  background-position: 8px -63px;
+}
+#shanp {
+  width: 1080px;
+  height: 245px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+#shanp > .shanp-a {
+  width: 537px;
+  height: 245px;
+  float: left;
+}
+#shanp > .shanp-a > .shanp-b {
+  width: 537px;
+  height: 210px;
+  background-color: #f9f3e9;
+  position: relative;
+}
+#shanp > .shanp-a > .shanp-b > img {
+  width: 215px;
+  height: 215px;
+  position: absolute;
+  right: 0;
+  top: -12px;
+}
+#shanp > .shanp-a > .shanp-b > .shanp-w {
+  padding-top: 25px;
+  padding-left: 23px;
+}
+#shanp > .shanp-a > .shanp-b > .shanp-w > .pro-info {
+  color: #333;
+  margin-top: 0;
+  font-size: 20px;
+  line-height: 24px;
+  height: 24px;
+}
+#shanp > .shanp-a > .shanp-b > .shanp-w > .pro-desc {
+  color: #999;
+  font-size: 16px;
+  line-height: 20px;
+  height: 20px;
+  margin-top: 8px;
+}
+#shanp > .shanp-a > .shanp-b > .shanp-w > .pro-price {
+  font-size: 24px;
+  line-height: 28px;
+  height: 28px;
+  overflow: hidden;
+  color: #a92112;
+  margin-top: 16px;
+}
+#shanp > .shanp-a > .shanp-b > .shanp-w > .pro-price > .tag {
+  font-size: 15px;
+  vertical-align: top;
+  margin-right: 7px;
+}
+#shanp > .shanp-a > .shanp-b > .shanp-w > .pro-price > .pro-flag {
+  font-size: 12px;
+}
+#shanp > .shanp-a > .shanp-c {
+  width: 537px;
+  height: 25px;
+  margin-top: 10px;
+  position: relative;
+}
+#shanp > .shanp-a > .shanp-c > img {
+  position: absolute;
+  left: 0;
+  top: -10px;
+}
+#shanp > .shanp-a > .shanp-c > .m-suppory {
+  color: #999;
+  font-size: 15px;
+  margin-left: 20px;
+  float: left;
+  cursor: pointer;
+}
+#shanp > .shanp-a > .shanp-c > .m-suppory > .sup-num {
+  margin-right: 6px;
+  color: #a92112;
+  font-size: 18px;
+}
+#shanp > .shanp-a > .shanp-c > .progress-tag-con {
+  text-align: center;
+  height: 18px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  overflow: hidden;
+  display: inline-block;
+  float: left;
+}
+#shanp > .shanp-a > .shanp-c > .m-persent {
+  margin-right: 15px;
+  color: #a92112;
+  font-size: 18px;
+  float: right;
+}
+#shanp > .shanw-a {
+  width: 266px;
+  height: 245px;
+  float: left;
+  margin: 0px 2px;
+}
+#shanp > .shanw-a > .shanw-b {
+  width: 266px;
+  height: 210px;
+  background-color: #f8f8f8;
+  position: relative;
+}
+#shanp > .shanw-a > .shanw-b > img {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+}
+#shanp > .shanw-a > .shanw-b > .pro-text {
+  position: relative;
+  z-index: 6;
+  padding-top: 25px;
+  padding-left: 15px;
+}
+#shanp > .shanw-a > .shanw-b > .pro-text > .pro-info {
+  color: #333;
+  margin-top: 0;
+  font-size: 20px;
+  line-height: 24px;
+  height: 24px;
+}
+#shanp > .shanw-a > .shanw-b > .pro-text > .pro-price {
+  font-size: 20px;
+  line-height: 24px;
+  height: 24px;
+  overflow: hidden;
+  color: #a92112;
+  margin-top: 11px;
+}
+#shanp > .shanw-a > .shanw-c {
+  width: 266px;
+  height: 25px;
+  margin-top: 10px;
+  position: relative;
+}
+#shanp > .shanw-a > .shanw-c img {
+  height: 3px;
+  width: 266px;
+  position: absolute;
+  left: 0;
+  top: -10px;
+}
+#shanp > .shanw-a > .shanw-c > .m-suppory {
+  font-family: Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+  margin-left: 15px;
+  float: left;
+}
+#shanp > .shanw-a > .shanw-c > .m-suppory > .sup-num {
+  margin-right: 6px;
+  color: #a92112;
+  font-size: 18px;
+}
+#shanp > .shanw-a > .shanw-c > .m-suppory > .progress-tag-con {
+  text-align: center;
+  height: 18px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 14px;
+  color: #333;
+}
+#shanp > .shanw-a > .shanw-c > .m-persent {
+  margin-right: 15px;
+  color: #a92112;
+  font-size: 18px;
+  float: right;
+}
+#shanp > .shanu-a {
+  width: 266px;
+  height: 245px;
+  float: left;
+}
+#shanp > .shanu-a > .shanu-b {
+  width: 266px;
+  height: 210px;
+  background-color: #f8f8f8;
+  position: relative;
+}
+#shanp > .shanu-a > .shanu-b > img {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+}
+#shanp > .shanu-a > .shanu-b > .pro-text {
+  position: relative;
+  z-index: 6;
+  padding-top: 25px;
+  padding-left: 15px;
+}
+#shanp > .shanu-a > .shanu-b > .pro-text > .pro-info {
+  color: #333;
+  margin-top: 0;
+  font-size: 20px;
+  line-height: 24px;
+  height: 24px;
+}
+#shanp > .shanu-a > .shanu-b > .pro-text > .pro-price {
+  font-size: 20px;
+  line-height: 24px;
+  height: 24px;
+  overflow: hidden;
+  color: #a92112;
+  margin-top: 11px;
+}
+#shanp > .shanu-a > .shanu-c {
+  width: 266px;
+  height: 25px;
+  margin-top: 10px;
+  position: relative;
+}
+#shanp > .shanu-a > .shanu-c img {
+  height: 3px;
+  width: 266px;
+  position: absolute;
+  left: 0;
+  top: -10px;
+}
+#shanp > .shanu-a > .shanu-c > .m-suppory {
+  font-family: Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+  margin-left: 15px;
+  float: left;
+}
+#shanp > .shanu-a > .shanu-c > .m-suppory > .sup-num {
+  margin-right: 6px;
+  color: #a92112;
+  font-size: 18px;
+}
+#shanp > .shanu-a > .shanu-c > .m-suppory > .progress-tag-con {
+  text-align: center;
+  height: 18px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  overflow: hidden;
+  display: inline-block;
+  font-size: 14px;
+  color: #333;
+}
+#shanp > .shanu-a > .shanu-c > .m-persent {
+  margin-right: 15px;
+  color: #a92112;
+  font-size: 18px;
+  float: right;
+}
+#dt-zc {
+  width: 1080px;
+  height: 37px;
+  margin: 0 auto;
+  color: #333;
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 35px;
+}
+#dt-zc > .dt-zc-yy {
+  margin-left: 12px;
+  font-size: 14px;
+  color: #999;
+}
+#dt-zc > .dt-gd {
+  width: 30px;
+  height: 30px;
+  color: #999;
+  cursor: pointer;
+  font-size: 14px;
+  float: right;
+  line-height: 30px;
+}
+#dt-zc > .dt-jt {
+  width: 20px;
+  height: 20px;
+  background: url(../images/jlt.png) no-repeat 8px -31px;
+  float: right;
+  margin-top: 2px;
+}
+#dt-zc > .dt-jt:hover {
+  background-position: 8px -63px;
+}
+.lbt {
+  width: 1080px;
+  height: 352px;
+  margin-top: 20px;
+}
+.lbt > .swiper-wrapper {
+  transition: 1s;
+}
+.lbt > .swiper-wrapper > .sp-1:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
+.lbt > .swiper-wrapper > .sp-1 {
+  text-align: center;
+  margin-right: 4px;
+  width: 266px !important;
+}
+.lbt > .swiper-wrapper > .sp-1 > img {
+  width: 266px;
+  height: 266px;
+  vertical-align: bottom;
+}
+.lbt > .swiper-wrapper > .sp-1 > .sp-dq {
+  height: 86px;
+  padding: 1px;
+  background: #faf6ef;
+}
+.lbt > .swiper-wrapper > .sp-1 > .sp-dq > .sp-m {
+  margin-top: 10px;
+  text-align: center;
+  color: #333;
+  font-size: 19px;
+  line-height: 23px;
+  height: 23px;
+}
+.lbt > .swiper-wrapper > .sp-1 > .sp-dq > .sp-jg {
+  margin-top: 10px;
+  text-align: center;
+}
+.lbt > .swiper-wrapper > .sp-1 > .sp-dq > .sp-jg > .sp-a {
+  line-height: 26px;
+  color: #a92112;
+  font-size: 15px;
+}
+.lbt > .swiper-wrapper > .sp-1 > .sp-dq > .sp-jg > .sp-b {
+  font-size: 22px;
+  line-height: 26px;
+  color: #a92112;
+}
+.lbt > .swiper-wrapper > .sp-1 > .sp-dq > .sp-jg > .sp-c {
+  color: #333;
+  font-size: 14px;
+}
+#dj-zc {
+  width: 1080px;
+  height: 37px;
+  margin: 0 auto;
+  color: #333;
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 35px;
+}
+#dj-zc > .dj-zc-yy {
+  margin-left: 12px;
+  font-size: 14px;
+  color: #999;
+}
+#dj-zc > .dj-gd {
+  width: 30px;
+  height: 30px;
+  color: #999;
+  cursor: pointer;
+  font-size: 14px;
+  float: right;
+  line-height: 30px;
+}
+#dj-zc > .dj-jt {
+  width: 20px;
+  height: 20px;
+  background: url(../images/jlt.png) no-repeat 8px -31px;
+  float: right;
+  margin-top: 2px;
+}
+#dj-zc > .dj-jt:hover {
+  background-position: 8px -63px;
+}
+.lby {
+  width: 1080px;
+  height: 352px;
+  margin-top: 20px;
+}
+.lby > .swiper-wrapper {
+  transition: 1s;
+}
+.lby > .swiper-wrapper > .sp-2:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-1px);
+}
+.lby > .swiper-wrapper > .sp-2 {
+  text-align: center;
+  margin-right: 4px;
+  width: 266px !important;
+}
+.lby > .swiper-wrapper > .sp-2 > img {
+  width: 266px;
+  height: 266px;
+  vertical-align: bottom;
+}
+.lby > .swiper-wrapper > .sp-2 > .sp-dq {
+  height: 86px;
+  padding: 1px;
+  background: #faf6ef;
+}
+.lby > .swiper-wrapper > .sp-2 > .sp-dq > .sp-m {
+  margin-top: 10px;
+  text-align: center;
+  color: #333;
+  font-size: 19px;
+  line-height: 23px;
+  height: 23px;
+}
+.lby > .swiper-wrapper > .sp-2 > .sp-dq > .sp-jg {
+  margin-top: 10px;
+  text-align: center;
+}
+.lby > .swiper-wrapper > .sp-2 > .sp-dq > .sp-jg > .sp-a {
+  line-height: 26px;
+  color: #a92112;
+  font-size: 15px;
+}
+.lby > .swiper-wrapper > .sp-2 > .sp-dq > .sp-jg > .sp-b {
+  font-size: 22px;
+  line-height: 26px;
+  color: #a92112;
+}
+.lby > .swiper-wrapper > .sp-2 > .sp-dq > .sp-jg > .sp-c {
+  color: #333;
+  font-size: 14px;
+}

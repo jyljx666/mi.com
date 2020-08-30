@@ -1,0 +1,100 @@
+@charset 'utf-8';
+*{
+    padding: 0;
+    margin: 0;
+}
+#index-title{
+    width: 100%;
+    height: 48px;
+    background-color: #333;
+    >.index-nav{
+        width: 1080px;
+        height: 48px;
+        margin: 0 auto;
+        >.index-dh{
+            float: right;
+            list-style: none;
+            >span{
+                width: 0px;
+                float: left;
+                border-right: 1px solid #666;
+                height: 16px;
+                margin-top: 17px;
+                margin-left: 6px;
+                margin-right: 3px;
+            }
+            >li{
+                float: left;
+                
+                >a{
+                    text-decoration: none;
+                    color: #e7e7e7;
+                    font-size:14px;
+                    line-height: 48px;
+                }
+            }
+            >.m-no-login{
+                margin-right: 8px;
+                a{
+                    margin-left: 8px;
+                }
+            }
+            >.fl{
+                text-align: center;
+                height: 48px;
+                line-height: 48px;
+                margin-right: 8px;
+                margin-left: 11px;
+                vertical-align: middle;
+                .icon-shouji{
+                    font-size: 20px;
+                    color: #e7e7e7;
+                    line-height: 48px;
+                    vertical-align: middle;
+                }
+            }
+            >.site-item-nav{
+                margin-right: 8px;
+                margin-left: 11px;
+                position: relative;
+                >.icon-ai-arrow-down{
+                    color: #e7e7e7;
+                }
+                >#site-cx{
+                    width: 160px;
+                    height: 0px;
+                    overflow: hidden;
+                    list-style: none;
+                    position: absolute;
+                    left: 0;
+                    top: 48px;
+                    transition: .1s;
+                    box-shadow: 0 15px 30px rgba(0,0,0,.2);
+                    >li{
+                        width: 140px;
+                        height: 35px;
+                        padding: 0px 10px;
+                        text-align: center;
+                        line-height: 35px;
+                        background: #fff;
+                        box-shadow: 0 15px 30px rgba(0,0,0,.1);
+                        >a{
+                            font-size: 14px;
+                            color: #666;
+                            text-decoration: none;
+                        }
+                    }
+                    >li:hover{
+                        background: #845f3f;
+                    }
+                    >li:hover a{
+                        color: #fff;
+                    }
+                }
+            }
+            >.site-item-nav:hover #site-cx{
+                height: 70px;
+            }
+        }
+    }
+}

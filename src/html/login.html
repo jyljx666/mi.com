@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/login.css">
+    <!-- <script>
+        window.onload = function() {
+            let login = document.querySelector('#login')
+            let username = document.querySelector('#username')
+            let password = document.querySelector('#password')
+            let logints = document.querySelector('.login-ts')
+            login.onclick = function() {
+                if (username.value == '') {
+                    logints.style = "height: 20px;"
+                    logints.innerHTML = "请输入"
+
+                }
+            }
+        }
+    </script> -->
 </head>
 
 <body>
@@ -22,9 +37,45 @@
                     <input type="text" id="username" placeholder="邮箱/手机号码/小米ID">
                     <input type="text" id="password" placeholder="密码">
                 </div>
+                <div class="login-ts"></div>
                 <input type="button" value="登录" id="login">
+                <a href="javascript:;" id="ChangeLoginType">手机短信登录/注册</a>
+                <div class="login-zc">
+                    <a href="#">立即注册</a>
+                    <span>|</span>
+                    <a href="#">忘记密码</a>
+                </div>
+                <fieldset class="login-dl">
+                    <legend class="login-dl-title">其他登录方式</legend>
+                </fieldset>
+                <div class="login-nav">
+                    <a href="#">
+                        <div class="nav-qq"></div>
+                    </a>
+                    <a href="#">
+                        <div class="nav-xl"></div>
+                    </a>
+                    <a href="#">
+                        <div class="nav-zfb"></div>
+                    </a>
+                    <a href="#">
+                        <div class="nav-wx"></div>
+                    </a>
+                </div>
             </div>
         </div>
+    </div>
+    <div id="lang-select">
+        <a href="">简体</a>
+        <a href="">繁体</a>
+        <a href="">English</a>
+        <a href="">常见问题</a>
+        <a href="">隐私政策</a>
+    </div>
+    <div id="lang-bj">
+        <a href="">小米公司版权所有-京ICP备10046444-</a>
+        <a href=""><img src="../images/ghs.png" alt=""></a>
+        <a href="">京公网安备11010802020134号-京ICP证110507号</a>
     </div>
 </body>
 
