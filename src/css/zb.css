@@ -1,0 +1,62 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+#zb-nav {
+  width: 71px;
+  height: 363px;
+  background: #fff;
+  position: fixed;
+  padding: 0 5px;
+  top: 220px;
+  right: 10px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+}
+#zb-nav > .fixed-nav {
+  width: 71px;
+  height: 363px;
+}
+#zb-nav > .fixed-nav > li:nth-child(5) {
+  border-bottom: 0px solid #e7e7e7;
+}
+#zb-nav > .fixed-nav > li {
+  list-style: none;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #e7e7e7;
+}
+#zb-nav > .fixed-nav > li > .info-a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/jlt.png) no-repeat 0 -1644px;
+}
+#zb-nav > .fixed-nav > li > .info-b {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/jlt.png) no-repeat 0 -1270px;
+}
+#zb-nav > .fixed-nav > li > .info-c {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/jlt.png) no-repeat 0 -794px;
+}
+#zb-nav > .fixed-nav > li > .info-d {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/jlt.png) no-repeat 0 -998px;
+}
+#zb-nav > .fixed-nav > li > .info-e {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/jlt.png) no-repeat 0 -1304px;
+}
+#zb-nav > .fixed-nav > li > p {
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+}

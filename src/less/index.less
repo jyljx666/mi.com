@@ -1,60 +1,4 @@
 @import "./db.less";
-#index-ss{
-    width: 100%;
-    height: 51px;
-    margin-top: 20px;
-    >.index-ss-content{
-        width: 1080px;
-        height: 51px;
-        margin: 0 auto;
-        >img{
-            width: 123px;
-            height: 51px;
-            margin-right: 140px;
-            float: left;
-        }
-        .index-xs,.index-qg{
-            width: 72px;
-            height: 51px;
-            margin-right: 32px;
-            line-height: 57px;
-            font-size: 18px;
-            float: left;
-        }
-        >.icon-gouwuche{
-            float: right;
-            font-size: 20px;
-            width: 30px;
-            height: 30px;
-            text-align: center;
-            margin-top: 28px;
-        }
-        >#index-shopping{
-            width: 281px;
-            height: 42px;
-            float: right;
-            margin-top: 1.5px;
-            border-bottom:1px solid #333;
-            >.icon-fangdajing{
-                float: left;
-                font-size: 20px;
-                width: 30px;
-                height: 30px;
-                text-align: center;
-                margin-top: 17px;
-            }
-            >.index-sousuo{
-                width: 249px;
-                height: 18px;
-                outline: none;
-                border: 0px #fff solid;
-                float: left;
-                margin-top: 20px;
-            }
-        }
-    }
-}
-
 #nav-box{
     width: 1080px;
     height: 358px;
@@ -561,7 +505,6 @@
             >.sp-dq{
                 height: 86px;
                 padding: 1px;
-                background: #faf6ef;
                 >.sp-m{
                     margin-top: 10px;
                     text-align: center;
@@ -592,3 +535,155 @@
         }
     }
 } 
+#xp-zc{
+    width: 1080px;
+    height: 37px;
+    margin: 0 auto;
+    color: #333;
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 35px;
+}
+#zs-tj:after{
+    content:"";
+    clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+
+}
+#zs-tj{
+    width: 1080px;
+    min-height: 350px;
+    margin: 0 auto;
+    >a{
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+    >a:nth-child(4n+1){
+        margin: 0;
+    }
+    >.zs-sp-1{
+        display: block;
+        text-decoration: none;
+        width: 264px;
+        height: 348px;
+        border: 1px solid #e7e7e7;
+        float: left;
+        >.zs-tp{
+            width: 194px;
+            height: 195px;
+            padding: 0px 35px 3px 35px;
+            >img{
+                width: 195px;
+                height: 195px;
+            }
+        }
+        >.pro-desc {
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+            text-align:center;
+            color: #845f3f;
+            font-size: 16px;
+            line-height: 20px;
+            height: 20px;
+            margin-top: 0;
+        }
+        >.jg-box{
+            width: 264px;
+            height: 89px;
+            margin-top: 18px;
+            padding: 13px 0 10px;
+            background: #f8f8f8;
+            >.jg-tj{
+                width: 264px;
+                height: 20px;
+                padding: 2px 0px;
+            }
+            >.pro-info {
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space: nowrap;
+                color: #333;
+                margin-top: 10px;
+                font-size: 18px;
+                line-height: 22px;
+                height: 22px;
+                text-align: center;
+            }
+            >.font-zt{
+                margin-top: 11px;
+                margin-bottom: 0;
+                height: 22px;
+                line-height: 22px;
+                color: #a92112;
+                text-align: center;
+            }
+        }
+    }
+}
+@import './foot.less';
+@import './zb.less';
+#index-s{
+    z-index: 10;
+    width: 100%;
+    height: 51px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background-color: #fff;
+    display: none;
+    border-bottom: 1px solid #eee;
+    >.index-ss-content{
+        width: 1080px;
+        height: 51px;
+        margin: 0 auto;
+        >img{
+            width: 123px;
+            height: 51px;
+            margin-right: 140px;
+            float: left;
+        }
+        .index-xs,.index-qg{
+            width: 72px;
+            height: 51px;
+            margin-right: 32px;
+            line-height: 57px;
+            font-size: 18px;
+            float: left;
+        }
+        >.icon-gouwuche{
+            float: right;
+            font-size: 20px;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            margin-top: 28px;
+        }
+        >#index-shopping{
+            width: 281px;
+            height: 42px;
+            float: right;
+            margin-top: 1.5px;
+            border-bottom:1px solid #333;
+            >.icon-fangdajing{
+                float: left;
+                font-size: 20px;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                margin-top: 17px;
+            }
+            >.index-sousuo{
+                width: 249px;
+                height: 18px;
+                outline: none;
+                border: 0px #fff solid;
+                float: left;
+                margin-top: 20px;
+            }
+        }
+    }
+}

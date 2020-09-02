@@ -97,3 +97,59 @@
 #index-title > .index-nav > .index-dh > .site-item-nav:hover #site-cx {
   height: 70px;
 }
+#index-ss {
+  width: 100%;
+  height: 51px;
+  margin-top: 20px;
+}
+#index-ss > .index-ss-content {
+  width: 1080px;
+  height: 51px;
+  margin: 0 auto;
+}
+#index-ss > .index-ss-content > img {
+  width: 123px;
+  height: 51px;
+  margin-right: 140px;
+  float: left;
+}
+#index-ss > .index-ss-content .index-xs,
+#index-ss > .index-ss-content .index-qg {
+  width: 72px;
+  height: 51px;
+  margin-right: 32px;
+  line-height: 57px;
+  font-size: 18px;
+  float: left;
+}
+#index-ss > .index-ss-content > .icon-gouwuche {
+  float: right;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin-top: 28px;
+}
+#index-ss > .index-ss-content > #index-shopping {
+  width: 281px;
+  height: 42px;
+  float: right;
+  margin-top: 1.5px;
+  border-bottom: 1px solid #333;
+}
+#index-ss > .index-ss-content > #index-shopping > .icon-fangdajing {
+  float: left;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  margin-top: 17px;
+}
+#index-ss > .index-ss-content > #index-shopping > .index-sousuo {
+  width: 249px;
+  height: 18px;
+  outline: none;
+  border: 0px #fff solid;
+  float: left;
+  margin-top: 20px;
+}

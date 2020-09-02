@@ -1,0 +1,448 @@
+@import './db.less';
+#sp-box{
+    width: 100%;
+    min-height: 285px;
+    padding-top: 60px;
+    padding-bottom: 100px;
+    overflow: hidden;
+    border-top: 1px solid #e7e7e7;
+    box-sizing: content-box;
+    >.sp-xq{
+        width: 1080px;
+        height: 595px;
+        margin: 0 auto;
+        >.sp-xq-box{
+            width: 465px;
+            height: 374px;
+            float: left;
+            >.sp-main{
+                width: 372px;
+                height: 372px;
+                float: left;
+                border: 1px solid #ececec;
+                >img{
+                    width: 372px;
+                    height: 372px; 
+                }
+            }
+            >.sp-main-yb{
+                width: 85px;
+                height: 372px;
+                float: right;
+                text-align: center;
+                overflow: hidden;
+                >img{
+                    float: left;
+                    width: 83px;
+                    height: 83px;
+                    margin-bottom: 11.7px;
+                    border: 1px solid #ececec;
+                }
+            }
+        }
+        >.sp-wz{
+            width: 561px;
+            height: 595px;
+            float: right;
+            >.sp-wz-tilte{
+                width: 561px;
+                height: 26px;
+                margin-bottom: 4px;
+                >.good-name{
+                    vertical-align: middle;
+                    line-height: 26px;
+                    font-size: 20px;
+                    color: #333;
+                    float: left;
+                }
+                >.good-tag{
+                    float: left;
+                    width: 48px;
+                    height: 14px;
+                    margin-top: 3px;
+                    margin-left: 5px;
+                    padding: 2px 5px;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #fff;
+                    background-color: #c00000;
+                    border-radius: 2px;
+                }
+            }
+            >.summary{
+                width: 471px;
+                height: 36px;
+                line-height: 18px;
+                font-size: 12px;
+                color: #999;
+                >.staticWords{
+                    color: #c00000;
+                    margin-right: 3px;
+                    line-height: 18px;
+                    font-size: 12px;
+                }
+                >.hyperlinkWords{
+                    cursor: pointer;
+                    text-decoration: underline;
+                }
+            }
+            >.promotion-wrap{
+                height: 26px;
+                width: 100%;
+                margin-top: 2px;
+                margin-bottom: 18px;
+                >.font-zc{
+                    float: left;
+                    color: #999;
+                    font-size: 12px;
+                    line-height: 18px;
+                    margin-top: 4px;
+                }
+                >.gift-type{
+                    width: 48px;
+                    height: 48px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    height: 18px;
+                    line-height: 18px;
+                    text-align: center;
+                    border: 1px solid #c00002;
+                    color: #c00000;
+                    margin-right: 6px;
+                    font-size: 12px;
+                    cursor: pointer;
+                }
+                >.d-gift-text{
+                    font-family: Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+                    font-size: 12px;
+                }
+            }
+            .card{
+                width: 541px;
+                height: 169px;
+                margin-bottom: 26px;
+                padding: 10px;
+                background-color: #f9f9f9;
+                >.price-line{
+                    width: 541px;
+                    height: 37px;
+                    margin-top: 12px;
+                    margin-bottom: 12px;
+                    height: 37px;
+                    overflow: hidden;
+                    vertical-align: bottom;
+                    line-height: 40px;
+                    font-size: 30px;
+                    >.sku-title{
+                        float: left;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 32px;
+                        vertical-align: bottom;
+                        margin-right: 10px;
+                        width: 48px;
+                    }
+                    >.price{
+                        color: #c00000;
+                        line-height: 30px;
+                        overflow: hidden;
+                        >span{
+                            // float: left;
+                        }
+                        >.money-symbol{
+                            color: #c00000;
+                            line-height: 30px;
+                            margin-right: 3px;
+                            font-size: 14px;
+                            vertical-align: 0;
+                        }
+                        >.value{
+                            font-size: 30px;
+                            vertical-align: 0;
+                        }
+                        >.market-price{
+                            margin-left: 14px;
+                            font-size: 12px;
+                            vertical-align: 0;
+                            text-decoration: line-through;
+                            color: #ccc;
+                            text-decoration: line-through;
+                        }
+                    }
+                }
+                >  .service-line{
+                    width: 541px;
+                    height: 96px;
+                    margin-bottom: 12px;
+                    vertical-align: bottom;
+                    line-height: 24px;
+                    font-size: 24px;
+                    >.sku-title{
+                        float: left;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 32px;
+                        vertical-align: bottom;
+                        margin-right: 10px;
+                        width: 48px;
+                        position: relative;
+                        >.icon{
+                            float: left;
+                            margin-top: 9px;
+                            border: 1px solid #c00000;
+                            border-radius: 50%;
+                            width: 12px;
+                            height: 12px;
+                            line-height: 12px;
+                            text-align: center;
+                            font-size: 10px;
+                            color: #c00000;
+                            cursor: pointer;
+                            position: absolute;
+                            right: 8px;
+                            top: 0;
+                        }
+                    }
+                    >.service{
+                        overflow: hidden;
+                        width: 483px;
+                        height: 98px;
+                        >.service-item{
+                            height: 24px;
+                            margin-right: 13px;
+                            float: left;
+                            vertical-align: middle;
+                            >.service-a{
+                                vertical-align: middle;
+                                display: inline-block;
+                                width: 16px;
+                                height: 16px;
+                                background: url(../images/jlt.png) no-repeat 0 -231px;
+                            }
+                            >span{
+                                font-size: 16px;
+                                vertical-align: middle;
+                                >.service-item-qualification{
+                                    margin-left: 8px;
+                                    line-height: 16px;
+                                    color: #9f8052;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+            .address-line{
+                width: 541px;
+                height: 14px;
+                overflow: hidden;
+                padding: 0 10px 26px;
+                font-size: 14px;
+            }
+            .lin-box{
+                width:561px;
+                height: 92px;
+                overflow: hidden;
+                padding: 0px 0px 12px;
+                >.size-line{
+                    margin-bottom: 14px;
+                    padding: 0 10px;
+                    width: 541px;
+                    height: 32px;
+                    >.sku-title{
+                        float: left;
+                        font-size: 12px;
+                        font-weight: 400;
+                        line-height: 32px;
+                        vertical-align: bottom;
+                        margin-right: 10px;
+                        width: 48px;
+                    }
+                    >.size-container{
+                        margin-bottom: -14px;
+                        float: left;
+                        width: 473px;
+                        overflow: hidden;
+                        >.tag-item-onSelected{
+                            border: 1px solid #845f3f;
+                            float: left;
+                            margin-right: 14px;
+                            box-sizing: border-box;
+                            padding: 4px 20px;
+                            color: #845f3f;
+                            line-height: 22px;
+                            font-size: 14px;
+                            margin-bottom: 14px;
+                            transition: all .5s cubic-bezier(0,1,.5,1);
+                            text-align: left;
+                            user-select: none;
+                        }
+                    }
+                }
+            }
+            >.count-line{
+                overflow: hidden;
+                margin-bottom: 40px;
+                width: 561px;
+                height: 32px;
+                >.sku-title{
+                    float: left;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 32px;
+                    vertical-align: bottom;
+                    margin-right: 10px;
+                    width: 48px;
+                    margin-left: 10px;
+                }
+                >.minus-btn{
+                    float: left;
+                    width: 34px;
+                    height: 30px;
+                    border: 1px solid #d6d6d6;
+                    line-height: 28px;
+                    text-align: center;
+                    color: #d6d6d6;
+                    >.m-icons{
+                        display: inline-block;
+                        width: 30px;
+                        height: 30px;
+                        line-height: 28px;
+                        text-align: center;
+                        background-image: url(https://shop.io.mi-img.com/static/h5/static3/media/yp-icons.7c45b9c9.png);
+                        background-position: 0 -1406px;
+                    }
+                }
+                >.count-input{
+                    float: left;
+                    width: 60px;
+                    height: 30px;
+                    padding: 0;
+                    border: 1px solid #d6d6d6;
+                    border-left-width: 0;
+                    border-right-width: 0;
+                    text-align: center;
+                    font-weight: 700;
+                    font-size: 14px;
+                    color: #333;
+                    outline: none;
+                }
+                >.j-btn{
+                    float: left;
+                    width: 34px;
+                    height: 30px;
+                    border: 1px solid #d6d6d6;
+                    line-height: 28px;
+                    text-align: center;
+                    color: #d6d6d6;
+                    >.m-icons{
+                        display: inline-block;
+                        width: 30px;
+                        height: 30px;
+                        line-height: 28px;
+                        text-align: center;
+                        background-image: url(https://shop.io.mi-img.com/static/h5/static3/media/yp-icons.7c45b9c9.png);
+                        background-position: 0 -1032px;
+                    }
+                }
+            }
+            >.btn-line{
+                width: 561px;
+                height: 52px;
+                >.ys{
+                    float: left;
+                    margin-right: 15px;
+                    box-sizing: border-box;
+                    color: #fff;
+                    background-color: #845f3f;
+                    border-color: #845f3f;
+                    min-width: 167px;
+                    height: 52px;
+                    line-height: 50px;
+                    font-size: 20px;
+                    display: inline-block;
+                    border-radius: 2px;
+                    text-align: center;
+                    border: 1px solid #666;
+                    padding: 0 6px;
+                    outline: none;
+                    text-decoration: none;
+                }
+                >.gm{
+                    background-color: #fff;
+                    color:#845f3f;
+                }
+                >.ml{
+                    margin-left: 15px;
+                }
+                >.favor-btn{
+                    float: left;
+                    width: 50px;
+                    height: 50px;
+                    border: 1px solid #ccc;
+                    border-radius: 2px;
+                    color: #999;
+                    line-height: 12px;
+                    text-align: center;
+                    font-size: 12px;
+                    >a{
+                        display: inline-block;
+                        line-height: 12px;
+                        width: 30px;
+                        height: 30px;
+                        background-position: 0 -930px;
+                        background-image: url(../images/jlt.png);
+                        outline: none;
+                        cursor: pointer;
+                    }
+                    >.a1{
+                        background-position: 0 -1576px;
+                    }
+                    >p{
+                        color: #999;
+                        line-height: 12px;
+                        text-align: center;
+                        font-size: 12px;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+#detail-content{
+    width: 1080px;
+    min-height: 500px;
+    margin: 0 auto;
+    background-color: #666;
+        >.nav-title{
+            width: 1080px;
+            height: 44px;
+            background-color: #e7e7e7;
+            z-index: 5;
+            >.info-nav{
+            height: 13px;
+            list-style: none;
+            overflow: unset;
+            padding: 16px 0 13px;
+                >.info-nav-item{
+                    display: list-item;
+                    color: #333;
+                    border-right-width: 1px;
+                    border-right-style: solid;
+                    line-height: 13px;
+                    font-size: 13px;
+                    text-align: center;
+                    float: left;
+                    height: 13px;
+                    border-right-color: rgb(204, 204, 204);
+                    width: 128px;
+                }
+            }
+        }
+        >img{
+            width: 1080px;
+            vertical-align: bottom;
+        }
+}
