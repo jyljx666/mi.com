@@ -73,14 +73,14 @@ body .wrapper .wrap .main-content .main .tit-normal {
   font-size: 14px;
   color: #333;
 }
-html .wrapper .wrap .main-content .main .username,
-body .wrapper .wrap .main-content .main .username {
+html .wrapper .wrap .main-content .main .user,
+body .wrapper .wrap .main-content .main .user {
   width: 330px;
   height: 42px;
   border: 1px solid #e8e8e8;
 }
-html .wrapper .wrap .main-content .main .username .number,
-body .wrapper .wrap .main-content .main .username .number {
+html .wrapper .wrap .main-content .main .user .number,
+body .wrapper .wrap .main-content .main .user .number {
   margin-left: 14px;
   width: 310px;
   height: 40px;
@@ -89,8 +89,8 @@ body .wrapper .wrap .main-content .main .username .number {
   outline: none;
   border: none;
 }
-html .wrapper .wrap .main-content .main .username .number::placeholder,
-body .wrapper .wrap .main-content .main .username .number::placeholder {
+html .wrapper .wrap .main-content .main .user .number::placeholder,
+body .wrapper .wrap .main-content .main .user .number::placeholder {
   color: #999;
   font-size: 14px;
 }
@@ -98,7 +98,6 @@ html .wrapper .wrap .main-content .main .phone-num,
 body .wrapper .wrap .main-content .main .phone-num {
   width: 330px;
   height: 42px;
-  margin-top: 20px;
   border: 1px solid #e8e8e8;
 }
 html .wrapper .wrap .main-content .main .phone-num .number,
@@ -116,15 +115,14 @@ body .wrapper .wrap .main-content .main .phone-num .number::placeholder {
   color: #999;
   font-size: 14px;
 }
-html .wrapper .wrap .main-content .main .password,
-body .wrapper .wrap .main-content .main .password {
+html .wrapper .wrap .main-content .main .pass,
+body .wrapper .wrap .main-content .main .pass {
   width: 330px;
   height: 42px;
   border: 1px solid #e8e8e8;
-  margin-top: 20px;
 }
-html .wrapper .wrap .main-content .main .password .number,
-body .wrapper .wrap .main-content .main .password .number {
+html .wrapper .wrap .main-content .main .pass .number,
+body .wrapper .wrap .main-content .main .pass .number {
   margin-left: 14px;
   width: 310px;
   height: 40px;
@@ -133,8 +131,8 @@ body .wrapper .wrap .main-content .main .password .number {
   outline: none;
   border: none;
 }
-html .wrapper .wrap .main-content .main .password .number::placeholder,
-body .wrapper .wrap .main-content .main .password .number::placeholder {
+html .wrapper .wrap .main-content .main .pass .number::placeholder,
+body .wrapper .wrap .main-content .main .pass .number::placeholder {
   color: #999;
   font-size: 14px;
 }
@@ -143,7 +141,6 @@ body .wrapper .wrap .main-content .main .affirm-password {
   width: 330px;
   height: 42px;
   border: 1px solid #e8e8e8;
-  margin-top: 20px;
 }
 html .wrapper .wrap .main-content .main .affirm-password .number,
 body .wrapper .wrap .main-content .main .affirm-password .number {

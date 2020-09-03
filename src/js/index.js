@@ -1,6 +1,7 @@
 import $ from './lib/jquery.js';
 import { mySwiper, mySwiper1, mySwiper2 } from './lib/swiper.js';
 import './lib/jquery.lazyload.js';
+import { cookie } from './lib/cookie.js';
 $(function() {
     $.get('../php/index.php', function(data) {
         console.log(data)
@@ -54,4 +55,27 @@ $(function() {
             $('#index-s')[0].style.display = 'none'
         }
     })
+
+    //跳转
+    $('.icon-gouwuche').on('click', function() {
+        location = 'http://localhost/xianmu/mi.com/src/html/cart.html';
+    })
+    $('.index-ss-content>img').on('click', function() {
+            location = 'http://localhost/xianmu/mi.com/src/html/index.html';
+        })
+        //判断登录状态
+    if (cookie.get('user')) {
+        let user = cookie.get('user');
+        user = JSON.parse(user);
+        $('.m-no-login').html(`<span id=${user.user}>${user.user}</span>
+        <div id="zhuxiao">注销</div>
+        `)
+        $('#' + user.user + '').css({ "height": "48px", "display": "block", "line-height": "48px", "color": "#fff" })
+        $('#zhuxiao').on('click', function() {
+            cookie.remove('user')
+            history.go(0)
+        })
+    }
+
+
 })

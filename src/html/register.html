@@ -2,63 +2,66 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>小米账号-注册</title>
-    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/register.css" />
+    <script src="../js/zc.js" type="module"></script>
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="wrap ">
+        <div class="wrap">
             <div class="main-content">
                 <div class="mi-logo">
-                    <img src="../images/mi-logo.png" alt="">
+                    <img src="../images/mi.png" alt="" />
                 </div>
                 <div class="title-item">
                     <h4 class="title_big30">注册小米帐号</h4>
                 </div>
 
                 <div class="main">
-                    <div class="username">
-                        <input type="text" placeholder="请输入用户名" class="number">
+                    <div class="user">
+                        <input type="text" placeholder="请输入用户名" class="number" id="username" />
                     </div>
+                    <span class="username" style="width: 100%; height: 20px; display: inline-block;"></span>
                     <div class="phone-num">
-                        <input type="text" placeholder="请输入手机号码" class="number">
+                        <input type="text" placeholder="请输入手机号码" class="number" id="phone" />
                     </div>
-                    <div class="password">
-                        <input type="text" placeholder="请输入密码" class="number">
+                    <span class="phone" style="width: 100%; height: 20px; display: inline-block"></span>
+                    <div class="pass">
+                        <input type="text" placeholder="请输入密码" class="number" id="password" />
                     </div>
+                    <span class="password" style="width: 100%; height: 20px; display: inline-block;"></span>
                     <div class="affirm-password">
-                        <input type="text" placeholder="确认密码" class="number">
+                        <input type="text" placeholder="确认密码" class="number" id="checkpass" />
                     </div>
+                    <span class="checkpass" style="width: 100%; height: 20px; display: inline-block;"></span>
                     <div class="btn">
                         <input type="submit" value="注册" class="btnn">
                     </div>
-                    <div class="btm">已阅读并同意：小米 <span>用户协议</span>和 <span>隐私政策</span></div>
+                    <div class="btm">
+                        已阅读并同意：小米 <span>用户协议</span>和 <span>隐私政策</span>
+                    </div>
                 </div>
             </div>
             <div class="naer">
                 <ul class="lang-select-list">
-                    <li>
-                        <a href="">简体</a> <span> | </span>
-                    </li>
-                    <li>
-                        <a href="">繁体</a> <span> | </span>
-                    </li>
-                    <li>
-                        <a href="">English</a> <span> | </span>
-                    </li>
+                    <li><a href="">简体</a> <span> | </span></li>
+                    <li><a href="">繁体</a> <span> | </span></li>
+                    <li><a href="">English</a> <span> | </span></li>
                     <li>
                         <a href="">常见问题</a>
                     </li>
                 </ul>
             </div>
             <div class="info">
-                <p class="banner-font">小米公司版权所有-京ICP备10046444-<span><img src="../images/ghs.png" alt=""></span>京公网安备11010802020134号-京ICP证110507号</p>
-            </div>
+                <p class="banner-font">
+                    小米公司版权所有-京ICP备10046444-<span><img src="../images/ghs.png" alt="" /></span
+            >京公网安备11010802020134号-京ICP证110507号
+          </p>
         </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>

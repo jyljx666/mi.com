@@ -8,6 +8,7 @@ import {
     //计算价格
     function js() {
         let jis = 0;
+        let gs = 0;
         let shop = cookie.get('shop')
         shop = JSON.parse(shop)
             //抓取所有XZ 遍历计算出价格
@@ -15,15 +16,26 @@ import {
             // console.log(elm.parentNode.parentNode.lastElementChild.previousElementSibling.children)
             // console.log($(elm).parents('.cart-item').children('.subtotal').find('span').html());
             jis += parseInt($(elm).parents('.cart-item').children('.subtotal').find('span').text().slice(1))
+            gs += parseInt($(elm).parents('.cart-item').children('.num').children('.edit').children('span').children('span').text())
         })
         $('.rt>.total').text(`￥${jis}`)
-        $('.arealy-select').text(`已选${$('.xz').length}件`)
+        $('.arealy-select').text(`已选${gs}件`)
 
         //判断选择的长度大于0就把购买亮起来
         if ($('.xz').length > 0) {
-            $('.cart-foot>.btn').css({ background: '#a9010d' })
+            $('.cart-foot>.btn').css({
+                background: '#a9010d'
+            })
+            $('.cart-foot>.btn').attr({
+                id: 'yes'
+            })
         } else {
-            $('.cart-foot>.btn').css({ background: '#e7e7e7' })
+            $('.cart-foot>.btn').css({
+                background: '#e7e7e7'
+            })
+            $('.cart-foot>.btn').attr({
+                id: 'no'
+            })
         }
         //对比cookie和选中的长度，长度一样就是全选
         if ($('.xz').length == shop.length) {
@@ -116,7 +128,8 @@ import {
                     shop = JSON.parse(shop)
                     let id = $(this).next().children().attr('id')
                     let a = parseInt($(this).next().children().text());
-                    let b = $('.t' + id + '').text().slice(1, 5)
+                    let b = $('.t' + id + '').text().slice(1)
+                    console.log(b)
                     if (a > 0) {
                         $(this).next().children().text(a - 1)
                         if (shop.some(elm => elm.id == id)) {
@@ -127,18 +140,26 @@ import {
                             cookie.set('shop', JSON.stringify(shop), 1);
                         }
                         $('.id' + id + '').text(`￥${parseInt($(this).next().children().text())*b}.00`)
+                        console.log($(this).next().children().text())
                         js()
                     }
                 })
 
+                console.log(res)
 
+                //加
                 $('.shangpin').on('click', '.jr', function(ev) {
                     let shop = cookie.get('shop')
                     shop = JSON.parse(shop)
                     let id = $(this).prev().children().attr('id')
                     let a = parseInt($(this).prev().children().text());
-                    let b = $('.t' + id + '').text().slice(1, 5)
-                    if (a < 20) {
+                    let b = $('.t' + id + '').text().slice(1)
+                    let c = res.filter(function(elm) {
+                            return elm.id == id
+                        })
+                        //库存
+                    if (a < c[0].num) {
+
                         $(this).prev().children().text(a + 1)
                         if (shop.some(elm => elm.id == id)) {
                             // 修改数量
@@ -150,6 +171,8 @@ import {
                         $('.id' + id + '').text(`￥${parseInt($(this).prev().children().text())*b}.00`)
                         js()
 
+                    } else {
+                        alert('库存不足')
                     }
                 })
 
@@ -185,13 +208,97 @@ import {
 
                     js()
                 })
+
+                //结算
+                $('.cart-foot>.btn').on('click', function() {
+                    if ($(this).attr('id') == 'yes') {
+                        $('.xz').each(function(i, elm) {
+                            let id = $(elm).parents('.cart-item').children('.num').children('.edit').children('span').children('span').attr('id')
+                            let shop = cookie.get('shop')
+                            shop = JSON.parse(shop)
+                            let js = shop.filter(function(val) {
+                                return val.id == id
+                            })
+                            shop = shop.filter(function(val) {
+                                return val.id !== id
+                            })
+                            console.log(js[0].num)
+                            console.log(shop)
+                            cookie.set('shop', JSON.stringify(shop), 1);
+                            $(elm).parents('.cart-item').remove()
+                            $.ajax({
+                                type: "get",
+                                url: "../php/js.php",
+                                data: {
+                                    id: id,
+                                    num: js[0].num
+                                },
+                                dataType: "json",
+                                success: function(res) {
+                                    console.log(res)
+                                }
+                            });
+
+
+                        })
+                        js()
+                    } else {
+                        alert('请选择商品')
+                    }
+                })
+
+
             }
         });
+    } else {
+        $('.shangpin').append('<h1>购物车空空的</h1>');
+    }
+
+    //跳转
+    $('.icon-gouwuche').on('click', function() {
+        location = 'http://localhost/xianmu/mi.com/src/html/cart.html';
+    })
+    $('.index-ss-content>img').on('click', function() {
+        location = 'http://localhost/xianmu/mi.com/src/html/index.html';
+    })
+
+    if (cookie.get('user')) {
+        let user = cookie.get('user');
+        user = JSON.parse(user);
+        $('.m-no-login').html(`<span id=${user.user}>${user.user}</span>`)
+        $('#' + user.user + '').css({
+            "height": "48px",
+            "display": "block",
+            "line-height": "48px",
+            "color": "#fff"
+        })
+        $('#' + user.user + '').on('mouseover', function() {
+
+        })
+    } else {
+        alert('请先登录')
+        location = "http://localhost/xianmu/mi.com/src/html/login.html"
     }
 
 
 
-
+    //结算
+    // $('.cart-foot>.btn').on('click', function() {
+    //     if ($(this).attr('id') == 'yes') {
+    //         $('.xz').each(function(i, elm) {
+    //             let id = $(elm).parents('.cart-item').children('.num').children('.edit').children('span').children('span').attr('id')
+    //             let shop = cookie.get('shop')
+    //             shop = JSON.parse(shop)
+    //             shop = shop.filter(function(val) {
+    //                 return val.id != id
+    //             })
+    //             cookie.set('shop', JSON.stringify(shop), 1);
+    //             $(elm).parents('.cart-item').remove()
+    //         })
+    //     } else {
+    //         alert('请选择商品')
+    //     }
+    // })
 
 
 

@@ -1,6 +1,6 @@
 import $ from './lib/jquery.js';
 import './lib/jquery.lazyload.js';
-import { cookie } from './lib/cookie.js'
+import { cookie } from './lib/cookie.js';
 $(function() {
     let id = location.search.split('=')[1]
     console.log(id)
@@ -129,7 +129,7 @@ $(function() {
             
             `
             $('#sp-box').html(temp);
-
+            console.log(data.num)
             $('#sp-box').on('click', '.minus-btn', function() {
                 if ($('.count-input').val() > 1) {
                     $('.count-input')[0].value = $('.count-input').val() - 1
@@ -139,11 +139,12 @@ $(function() {
                 }
             })
             $('#sp-box').on('click', '.j-btn', function() {
-                if ($('.count-input').val() < 20) {
+                if ($('.count-input').val() < parseInt(data.num)) {
                     $('.count-input')[0].value = parseInt($('.count-input').val()) + 1
                     $('.minus-btn > .m-icons').css({ "background-position": "0 -1372px" })
                 } else {
                     $('.j-btn > .m-icons').css({ "background-position": "0 -896px" })
+                    alert('库存不足')
                 }
             })
 
@@ -183,5 +184,14 @@ $(function() {
 
         cookie.set('shop', JSON.stringify(shop), 1);
     }
+
+    //跳转
+    $('.icon-gouwuche').on('click', function() {
+        location = 'http://localhost/xianmu/mi.com/src/html/cart.html';
+    })
+    $('.index-ss-content>img').on('click', function() {
+        location = 'http://localhost/xianmu/mi.com/src/html/index.html';
+    })
+
 
 })
